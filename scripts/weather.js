@@ -74,11 +74,11 @@ function displayForecast(forecastArray){
         cell1.innerHTML = forecastArray[i].name;
         
         let cell2 = row.insertCell(1);
-        cell2.innerHTML= "Temperature " + forecastArray[i].temperature + " " +
+        cell2.innerHTML= forecastArray[i].temperature + " " +
         forecastArray[i].temperatureUnit;
         
         let cell3 = row.insertCell(2);
-        cell3.innerHTML = "Winds " + forecastArray[i].windDirection + " " +
+        cell3.innerHTML = forecastArray[i].windDirection + " " +
         forecastArray[i].windSpeed;
         
         let cell4 = row.insertCell(3);
